@@ -1,5 +1,5 @@
 {
-  "name": "devtest",
+  "name": "qa",
   "default_attributes": {
     "apache2": {
       "listen_ports": [
