@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: sap
+# Cookbook Name:: deploy_app
 # Recipe:: default
 #
 # Copyright 2017, YOUR_COMPANY_NAME

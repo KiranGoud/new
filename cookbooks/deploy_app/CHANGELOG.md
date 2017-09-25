@@ -1,11 +1,11 @@
-sap CHANGELOG
-=============
+deploy_app CHANGELOG
+====================
 
-This file is used to list changes made in each version of the sap cookbook.
+This file is used to list changes made in each version of the deploy_app cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of sap
+- [your_name] - Initial release of deploy_app
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
