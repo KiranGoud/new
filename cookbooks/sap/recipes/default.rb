@@ -31,7 +31,7 @@ mount "/var/mnt" do
 end
 
 filesystem "label" do
-  fstype "ext3"
+  fstype "ext4"
   device "/dev/xvdf"
   mount "/var/mnt"
   action [:create, :enable, :mount]
