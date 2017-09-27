@@ -6,6 +6,7 @@
   },
   "description": "The base role for systems that serve HTTP traffic",
   "run_list": [
+	"recipe[nginx]"
   ],
   "env_run_lists" : {
   },

@@ -24,11 +24,11 @@ directory path do
   action :create
 end
 
-mount "/var/mnt" do
-  device xvdf
-  fstype 'ext4'
-  action :mount
-end
+#ount "/var/mnt" do
+ #device xvdf
+ #fstype 'ext4'
+ #action :mount
+#nd
 
 filesystem "label" do
   fstype "ext4"
