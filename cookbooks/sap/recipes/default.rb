@@ -24,7 +24,7 @@ directory path do
   action :create
 end
 
-#ount "/var/mnt" do
+mount "/var/mnt" do
  #device xvdf
  #fstype 'ext4'
  #action :mount
