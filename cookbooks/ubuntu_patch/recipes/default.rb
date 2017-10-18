@@ -11,6 +11,10 @@ command "cp -a /etc/* /mnt/my-back-up"
 user "root"
 end
 
+package 'update-manager-core' do
+  action :install
+end
+
 execute "apt update" do
 command "apt-get update -y"
 action :run
@@ -21,12 +25,6 @@ command "apt-get dist-upgrade -y"
 action :run
 end
 
-execute "apt update-manager-core" do
-command "apt-get update-manager-core"
-action :run
-end
-
-execute "do-release-upgrade" do
 command "do-release-upgrade "
 action :run
 end
@@ -34,4 +32,9 @@ execute "do-release-upgrade" do
 command "do-release-upgrade -d"
 end
 
+#reboot 'app_requires_reboot' do
+# action :request_reboot
+#reason 'Need to reboot when the run completes successfully.'
+# delay_mins 5
+#end
 

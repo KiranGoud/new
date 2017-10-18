@@ -14,7 +14,7 @@ directory "/mnt/my-backup" do
   mode '0755'
 end
 
-mount ' /mnt/my-back-up' do
+mount '/mnt/my-backup' do
   device '/dev/xvda1'
   fstype 'ext4'
 end
