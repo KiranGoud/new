@@ -24,7 +24,7 @@ execute "apt dist-upgrade" do
 command "apt-get dist-upgrade -y"
 action :run
 end
-
+excute "" do
 command "do-release-upgrade "
 action :run
 end
