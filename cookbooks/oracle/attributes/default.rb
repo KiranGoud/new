@@ -20,7 +20,7 @@ default[:oracle][:user][:uid] = 201
 default[:oracle][:user][:gid] = 201
 default[:oracle][:user][:shell] = '/bin/ksh'
 default[:oracle][:user][:sup_grps] = {'dba' => 202, 'bckpdba' => 203, 'dgdba' => 204, 'kmdba' => 205}
-default[:oracle][:user][:pw_set] = false
+default[:oracle][:user][:pw_set] = false 
 default[:oracle][:user][:edb] = 'oracle'
 default[:oracle][:user][:edb_item] = 'foo'
 
@@ -38,8 +38,8 @@ default[:oracle][:ora_base] = '/opt/oracle'
 default[:oracle][:ora_inventory] = '/opt/oraInventory'
 
 ## Settings specific to the Oracle RDBMS proper.
-#default[:oracle][:rdbms][:dbbin_version] = '11g'
-#default[:oracle][:rdbms][:ora_home] = "#{node[:oracle][:ora_base]}/11R23"
+default[:oracle][:rdbms][:dbbin_version] = '12c'
+default[:oracle][:rdbms][:ora_home] = "#{node[:oracle][:ora_base]}/11R23"
 default[:oracle][:rdbms][:ora_home_12c] = "#{node[:oracle][:ora_base]}/12R1"
 default[:oracle][:rdbms][:is_installed] = false
 default[:oracle][:rdbms][:install_info] = {}
@@ -124,7 +124,7 @@ default[:oracle][:client][:latest_patch][:is_installed] = false
 # with true indicating the DB has already been created and should be skipped
 # by createdb.rb. We don't create any DBs by default, hence the attribute's
 # value is set to an empty Hash.
-default[:oracle][:rdbms][:dbs] = {}
+default[:oracle][:rdbms][:dbs] = 'orcl'
 # The directory under which we install the DBs.
 default[:oracle][:rdbms][:dbs_root] = "/oradata"
 

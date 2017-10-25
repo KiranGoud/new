@@ -1,11 +1,11 @@
-deploy_app CHANGELOG
-====================
+copy CHANGELOG
+==============
 
-This file is used to list changes made in each version of the deploy_app cookbook.
+This file is used to list changes made in each version of the copy cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of deploy_app
+- [your_name] - Initial release of copy
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

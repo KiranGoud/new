@@ -2,11 +2,11 @@
 ulimit -S -c unlimited > /dev/null 2>&1
 
 EDITOR=/bin/vi
-ORACLE_BASE=<%= node[:oracle][:ora_base] %>
-ORACLE_HOME=<%= node[:oracle][:rdbms][:ora_home] %>
+ORACLE_BASE=/opt/oracle
+ORACLE_HOME=/opt/oracle/12R1
 ORACLE_SID=
 ORACLE_UNQNAME=
-ORACLE_HOSTNAME=`hostname -f`
+ORACLE_HOSTNAME=ip-11-0-0-181.eu-central-1.compute.internal
 export EDITOR ORACLE_BASE ORACLE_HOME ORACLE_SID ORACLE_HOSTNAME
 
 

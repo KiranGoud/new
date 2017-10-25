@@ -52,15 +52,15 @@ yum_package 'unzip'
 # We run two resources to avoid chef-client's runaway memory usage resulting
 # in the kernel killing it.
 node[:oracle][:rdbms][:install_files].each do |zip_file|
-  execute "fetch_oracle_media_#{zip_file}" do
-    command "curl -kO #{zip_file}"
-    user "oracle"
-    group 'oinstall'
-    cwd node[:oracle][:rdbms][:install_dir]
-  end
+#  execute "#{zip_file}" do
+ #   command "curl -kO #{zip_file}"
+ #   user "oracle"
+ #   group 'oinstall'
+ #   cwd node[:oracle][:rdbms][:install_dir]
+  #end
 
-  execute "unzip_oracle_media_#{zip_file}" do
-    command "unzip #{File.basename(zip_file)}"
+  execute "#{zip_file}" do
+    command "unzip #{zip_file}"
     user "oracle"
     group 'oinstall'
     cwd node[:oracle][:rdbms][:install_dir]
