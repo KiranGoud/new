@@ -1,0 +1,15 @@
+{
+  "name": "common",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "description": "The base role for systems that serve HTTP traffic",
+  "run_list": [
+	"recipe[nginx]"
+  ],
+  "env_run_lists" : {
+  },
+  "override_attributes": {
+  }
+}
